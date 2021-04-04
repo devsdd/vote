@@ -45,6 +45,7 @@
     <body>
         <div class="container">
             <h3>Cats 🐱 vs. 🐶 Dogs!</h3>
+            <h4> (Those are your only choices) </h4>
             <form id="choice" name='form' method="POST" action="/">
                 <button id="cat-btn" type="submit" name="vote" class="btn {{if eq .Vote "cat"}}selected{{end}}" value="cat">🐱 Cat</button>
                 <button id="dog-btn" type="submit" name="vote" class="btn {{if eq .Vote "dog"}}selected{{end}}" value="dog">🐶 Dog</button>
