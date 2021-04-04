@@ -1,7 +1,7 @@
 # This YAML file defines the relationship and deployment ordering of your environments.
 
 # The name of the pipeline
-name: pipeline-voting-app-copilot-example-voting-app-vote
+name: pipeline-voting-app
 
 # The version of the schema used in this template
 version: 1
@@ -16,7 +16,7 @@ source:
   properties:
     access_token_secret: github-token-voting-app-vote
     branch: main
-    repository: https://github.com/copilot-example-voting-app/vote
+    repository: https://github.com/devsdd/vote.git
 
 # The deployment section defines the order the pipeline will deploy
 # to your environments.
@@ -28,4 +28,4 @@ stages:
       # Optional: use test commands to validate this stage of your build.
       # test_commands: [echo 'running tests', make test]
 
-    - name: prod-pdx
+    - name: prod
